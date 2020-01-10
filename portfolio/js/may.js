@@ -29,7 +29,7 @@ $(document).ready(function() {
             $(' .filter > div[filter="bootstrap"]').show(300);
         }
     })
-    $('.portfolio_indicator[filter="adaptive"]').click(function() {
+    $('.portfolio_indicator[filter="sate"]').click(function() {
         if ($(this).attr('val') == 'off') {
             $('.portfolio_indicator[filter]').attr('val', 'off');
             $(this).attr('val', 'on');
@@ -38,7 +38,7 @@ $(document).ready(function() {
             $(this).addClass('focused');
 
             $(' .filter > div').hide(300);
-            $(' .filter > div[filter="adaptive"]').show(300);
+            $(' .filter > div[filter="sate"]').show(300);
         }
     });
 
