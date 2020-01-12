@@ -1,0 +1,2 @@
+[2020-01-11 11:35:43] layer "1.png": Duplicate path: 1.png
+[2020-01-11 11:35:43] layer "2.png": Duplicate path: 2.png
