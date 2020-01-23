@@ -72,7 +72,7 @@ $(document).ready(function() {
         var target = $(this).attr('href');
         $('html, body').animation({
             scrollTop: $(target).offset().top
-        }, 500);
+        }, 400);
         $('ul.menu a[href^="#"]').css({ 'color': '#212121' });
         $(this).css({ 'color': '#00897b' });
         return false;

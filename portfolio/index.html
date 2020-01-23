@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <script src="./js/all.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <!--gOOGLE FONTS-->
     <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kelly+Slab&display=swap" rel="stylesheet">
@@ -23,21 +24,25 @@
     <header class="header">
         <div class="container">
             <div class="row col-xl-12 header_nav">
+                <i class="fa fa-bars fa-2x icon_burger"></i>
                 <nav>
-                    <a href="#for_me">about me</a>
-                    <a href="#skills">skills</a>
-                    <a href="#education">education</a>
-                    <a href="#portfolio">portfolio</a>
+                    <ul class="menu">
+                        <li><a href="#for_me">about me</a></li>
+                        <li><a href="#skills">skills</a></li>
+                        <li><a href="#education">education</a></li>
+                        <li><a href="#portfolio">portfolio</a></li>
+                    </ul>
                 </nav>
             </div>
+
         </div>
         <div class="container">
             <div class="row ">
-                <div class="col-xl-5 photo"></div>
-                <div class="col-xl-7">
+                <div class="col-xl-5 col-md-6 photo"></div>
+                <div class="col-xl-7 col-md-1">
                     <h3 id="name">olga</h3>
                     <p id="name">lebed</p>
-                    <p id="position">DEVELOPER</p>
+                    <p id="position">FRONTEND DEVELOPER</p>
                 </div>
 
             </div>
@@ -56,20 +61,20 @@
             </div>
             <div class="container content">
                 <div class="row">
-                    <h2 class="text col-xl-3">phone</h2>
-                    <div class="information col-xl-9">+380734858031</div>
+                    <h2 class="text col-xl-3 col-md-6">phone</h2>
+                    <div class="information col-xl-9 col-md-6">+380734858031</div>
                 </div>
                 <div class="row">
-                    <h2 class="text col-xl-3">Email</h2>
-                    <div class="information col-xl-9">bendugo5@gmail.con</div>
+                    <h2 class="text col-xl-3 col-md-6">Email</h2>
+                    <div class="information col-xl-9 col-md-6">bendugo5@gmail.com</div>
                 </div>
                 <div class="row">
-                    <h2 class="text col-xl-3">adress</h2>
-                    <div class="information col-xl-9">KIEV, SVERNAYA 2</div>
+                    <h2 class="text col-xl-3 col-md-6">adress</h2>
+                    <div class="information col-xl-9 col-md-6">KIEV, SVERNAYA 2</div>
                 </div>
                 <div class="row">
-                    <h2 class="text col-xl-3">social</h2>
-                    <div class="information col-xl-9">
+                    <h2 class="text col-xl-3 col-md-6">social</h2>
+                    <div class="information col-xl-9 col-md-6">
                         <a target="_blank" href="https://www.facebook.com/olya.bendug"><i class="fab fa-facebook-f icon"></i></a>
                         <a target="_blank" href="https://www.instagram.com/?hl=ru"><i class="fab fa-instagram icon"></i></a>
                         <a target="_blank" href="https://www.linkedin.com/in/olya-lebed-42a759177/"><i class="fab fa-linkedin-in icon"></i></a>
@@ -93,8 +98,8 @@
             </div>
         </div>
         <div class="container">
-            <div class="row col-xl-12 ">
-                <div class="first_skills col-xl-6">
+            <div class="row col-xl-12 col-md-12 ">
+                <div class="first_skills col-xl-6 col-md-7">
                     <h3 class="text_skills">FRONTEND DEVELOPER</h3>
                     <p class="content_skills">HTML5/CSS3</p>
                     <p class="content_skills">SASS/SCSS</p>
@@ -103,7 +108,7 @@
                     <p class="content_skills">JQuery</p>
                     <p class="content_skills">REACT</p>
                 </div>
-                <div class="second_skills col-xl-6">
+                <div class="second_skills col-xl-6 col-md-5">
                     <h3 class="text_skills">UI/UX DESIGN</h3>
                     <p class="content_skills">PHOTOSHOP</p>
                     <p class="content_skills">ILLUSTRATOR</p>
@@ -122,17 +127,17 @@
             </div>
         </div>
         <div class="container">
-            <div class="universati">
+            <div class="universati col-xl-12 col-md-12">
                 <p class="name_colige">ZNTU <span>Zaporizhzhia National Technical University</span></p>
                 <p class="time">September, 2013 - January, 2019</p>
                 <p class="specialty">Specialty: <span>Engineering technology</span></p>
             </div>
-            <div class="universati">
+            <div class="universati col-xl-12 col-md-12">
                 <p class="name_colige">BRAIN ACADEMY <span>Zaporizhzhia</span></p>
                 <p class="time">June, 2019 - November, 2019</p>
                 <p class="specialty">Specialty: <span>Frontend developer</span></p>
             </div>
-            <div class="universati">
+            <div class="universati col-xl-12 col-md-12">
                 <p class="name_colige">BRAIN ACADEMY <span>Zaporizhzhia</span></p>
                 <p class="time">July, 2018 - October, 2018</p>
                 <p class="specialty">Specialty: <span>Web design</span></p>
@@ -148,16 +153,16 @@
             </div>
         </div>
         <div class="container">
-            <div class="row indicator">
-                <button val="on" filter="all" class="portfolio_indicator ">all project</button>
+            <div class="row indicator col-xl-12 col-md-12">
+                <button val="on" filter="all" class="portfolio_indicator">all project</button>
                 <button val="off" filter="bootstrap" class="portfolio_indicator ">bootstrap</button>
                 <button val="off" filter="sate" class="portfolio_indicator ">sate</button>
-                <button val="off" filter="wd" class="portfolio_indicator ">web design</button>
+                <button val="off" filter="wd" class="portfolio_indicator">web design</button>
             </div>
         </div>
         <div class="container">
             <div class="row filter">
-                <div filter="bootstrap" class="col-xl-4">
+                <div filter="bootstrap" class="col-xl-4 col-md-4">
                     <a target="_blank" href="./web_sait/web_developer_bootstrap/index.html">
                         <div class="img_portfolio">
                             <div class="text_portfolio">
@@ -168,7 +173,7 @@
                         </div>
                     </a>
                 </div>
-                <div filter="sate" class="col-xl-4 ">
+                <div filter="sate" class="col-xl-4 col-md-4">
                     <a target="_blank" href="./web_sait/mogo/index.html">
                         <div class="img_portfolio_2">
                             <div class="text_portfolio">
@@ -180,7 +185,7 @@
                     </a>
                 </div>
 
-                <div filter="sate" class="col-xl-4">
+                <div filter="sate" class="col-xl-4 col-md-4">
                     <a target="_blank" href="./web_sait/first_sait/sait.html">
                         <div class="img_portfolio_4">
                             <div class="text_portfolio">
@@ -191,7 +196,7 @@
                         </div>
                     </a>
                 </div>
-                <div filter="wd" class="col-xl-4">
+                <div filter="wd" class="col-xl-4 col-md-4">
                     <a target="_blank" href="https://www.behance.net/gallery/77768491/Landing-page">
                         <div class="img_portfolio_3">
                             <div class="text_portfolio">
@@ -202,7 +207,7 @@
                         </div>
                     </a>
                 </div>
-                <div filter="wd" class="col-xl-4">
+                <div filter="wd" class="col-xl-4 col-md-4">
                     <a target="_blank" href="https://www.behance.net/gallery/78393889/holy-sneakers">
                         <div class="img_portfolio_5">
                             <div class="text_portfolio">
@@ -213,9 +218,15 @@
                         </div>
                     </a>
                 </div>
-                <div target="_blank" filter="bootstrap" class="col-xl-4">
+                <div filter="wd" class="col-xl-4  col-md-4">
                     <a target="_blank" href="#">
-                        <div class="img_portfolio_6"></div>
+                        <div class="img_portfolio_6">
+                            <div class="text_portfolio">
+                                <h3 class="headline_portfolio">SITE: SNEAKERS</h3>
+                                <p class="content_portfolio">STACK: adobe photoshop, adobe illustrator </p>
+                                <p class="content_portfolio">DATE: january, 2019 </p>
+                            </div>
+                        </div>
                     </a>
                 </div>
             </div>
