@@ -82,6 +82,7 @@ nav a:hover:after {
     background-position: 0 100%;
     position: relative;
     top: -100px;
+    display: block;
 }
 
 #name {
@@ -430,25 +431,6 @@ footer .container-fluid {
 
 /* ADAPTIV */
 
-@media screen and (max-width:768px) {
-    .header {
-        height: 650px;
-    }
-    .photo {
-        height: 550px;
-        width: 350px;
-        top: -30px;
-    }
-    #name {
-        font-size: 50px;
-        top: 5%;
-    }
-    #position {
-        font-size: 30px;
-        top: 5%;
-    }
-}
-
 @media screen and (max-width:950px) {
     .header {
         height: 650px;
@@ -516,7 +498,7 @@ footer .container-fluid {
         margin: 10px;
     }
     .button_position {
-        left: 30%;
+        left: 65%;
     }
     /* end about me */
     .section_skills {
@@ -568,6 +550,123 @@ footer .container-fluid {
     .img_portfolio_6 {
         width: 220px;
         height: 290px;
+        margin-bottom: 20px;
+    }
+    /* end portfolio */
+    #toTop {
+        position: fixed;
+        bottom: 100px;
+        right: 100px;
+    }
+}
+
+@media screen and (max-width:758px) {
+    .header {
+        height: 650px;
+    }
+    .photo {
+        height: 550px;
+        width: 350px;
+        top: -30px;
+    }
+    #name {
+        font-size: 50px;
+        top: 5%;
+    }
+    #position {
+        font-size: 30px;
+        top: 5%;
+    }
+    .for_me,
+    .skills,
+    .education,
+    .portfolio {
+        text-transform: uppercase;
+        color: #071f18;
+        font-family: "Kelly Slab", regular;
+        font-size: 45px;
+    }
+    .content {
+        margin-top: 50px;
+        margin-left: 50px
+    }
+    .text {
+        font-size: 20px;
+    }
+    .information {
+        font-size: 20px;
+    }
+    .icon {
+        margin: 4px;
+    }
+    .button_position {
+        left: 65%;
+    }
+    /* skills */
+    .section_skills {
+        height: 620px;
+        width: 100%;
+        background: white;
+        padding-left: 0px;
+    }
+    .skills {
+        padding-bottom: 70px;
+    }
+    .text_skills {
+        font-size: 18px;
+    }
+    .content_skills {
+        font-family: "Montserrat", regular;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #3c3f3e;
+    }
+    .first_skills {
+        padding-left: 75px;
+    }
+    /* education */
+    .section_education {
+        padding-left: 0;
+    }
+    .name_colige,
+    span,
+    .time,
+    .specialty {
+        font-size: 20px;
+    }
+    .universati {
+        margin-left: 60px;
+    }
+    /* portfolio */
+    .section_portfolio {
+        height: 820px;
+        padding-left: 0px;
+    }
+    .portfolio {
+        padding-bottom: 10px;
+    }
+    .portfolio_indicator {
+        font-size: 23px;
+        width: 190px;
+        height: 60px;
+        margin-bottom: 20px;
+    }
+    .indicator {
+        display: flex;
+        justify-content: center;
+    }
+    .portfolio_fail {
+        width: 320px;
+        height: 360px;
+    }
+    .img_portfolio,
+    .img_portfolio_2,
+    .img_portfolio_3,
+    .img_portfolio_4,
+    .img_portfolio_5,
+    .img_portfolio_6 {
+        width: 170px;
+        height: 200px;
         margin-bottom: 20px;
     }
     /* end portfolio */
