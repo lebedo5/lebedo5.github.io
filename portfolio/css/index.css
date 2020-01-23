@@ -351,6 +351,12 @@ span {
     background-repeat: no-repeat;
 }
 
+.img_portfolio_6 {
+    background: url(../img/Logo_Bead_Beads_2.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .text_portfolio {
     display: none;
 }
