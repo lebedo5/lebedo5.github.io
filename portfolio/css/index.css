@@ -19,6 +19,10 @@ body {
     justify-content: flex-end;
 }
 
+.menu_button {
+    display: none;
+}
+
 .menu {
     display: flex;
     position: relative;
@@ -42,13 +46,25 @@ nav a {
     display: block;
 }
 
-.icon_burger {
+.menu_button {
+    display: none;
+    position: relative;
+    top: 45px;
+    left: 700px;
+    background: azure;
     width: 40px;
     height: 40px;
-    position: relative;
-    top: -45px;
-    left: 100%;
+    border: none;
+}
+
+.menu_button:hover {
+    background: grey;
+}
+
+.icon_burger {
     display: none;
+    width: 30px;
+    height: 30px;
 }
 
 nav a:after {
@@ -90,7 +106,7 @@ nav a:hover:after {
     font-family: "Kelly Slab", regular;
     position: relative;
     top: 20%;
-    left: 30%;
+    margin-left: 150px;
     margin-bottom: 20px;
 }
 
@@ -99,7 +115,7 @@ nav a:hover:after {
     font-family: "Kelly Slab", regular;
     position: relative;
     top: 20%;
-    left: 30%;
+    margin-left: 150px;
     margin-bottom: 20px;
 }
 
@@ -117,6 +133,7 @@ nav a:hover:after {
 .skills,
 .education,
 .portfolio {
+    width: 100%;
     text-transform: uppercase;
     color: #071f18;
     font-family: "Kelly Slab", regular;
@@ -125,6 +142,7 @@ nav a:hover:after {
 }
 
 .text {
+    width: 100%;
     text-transform: uppercase;
     font-family: "Montserrat", regular;
     font-size: 25px;
@@ -133,6 +151,7 @@ nav a:hover:after {
 }
 
 .information {
+    width: 100%;
     font-size: 25px;
     color: #3c3f3e;
     padding-top: 33px;
@@ -140,8 +159,9 @@ nav a:hover:after {
 }
 
 .content {
+    width: 100%;
     margin-top: 70px;
-    margin-left: 70px
+    padding-left: 70px
 }
 
 .icon {
@@ -182,12 +202,6 @@ nav a:hover:after {
 .button:hover {
     color: #252525;
     background: #80f0d0;
-}
-
-.button_position {
-    position: relative;
-    transform: translateX(-30%);
-    left: 50%;
 }
 
 
@@ -262,7 +276,7 @@ span {
 
 .universati {
     margin-top: 70px;
-    margin-left: 75px;
+    padding-left: 75px;
 }
 
 
@@ -316,7 +330,6 @@ span {
 .img_portfolio_4,
 .img_portfolio_5,
 .img_portfolio_6 {
-    width: 320px;
     height: 360px;
     margin-bottom: 20px;
 }
@@ -400,7 +413,7 @@ div[filter]:hover .text_portfolio {
 /* end portfolio */
 
 footer .container-fluid {
-    background: #5fdcb9;
+    background: #effaf7;
     font-family: "Montserrat", regular;
     font-size: 20px;
     text-align: center;
@@ -430,18 +443,44 @@ footer .container-fluid {
 }
 
 .menu {
-    /* text-transform: none; */
     list-style: none;
 }
 
 
 /* ADAPTIV */
 
+@media screen and (max-width:1020px) {
+    nav a {
+        font-size: 27px;
+    }
+    .menu {
+        left: 60px;
+    }
+    /* portfolio */
+    .img_portfolio,
+    .img_portfolio_2,
+    .img_portfolio_3,
+    .img_portfolio_4,
+    .img_portfolio_5,
+    .img_portfolio_6 {
+        width: 265px;
+        height: 320px;
+        margin-bottom: 20px;
+    }
+}
+
 @media screen and (max-width:950px) {
     .header {
         height: 650px;
     }
     /* не работает */
+    .menu_button {
+        display: block;
+        left: 700px;
+    }
+    .icon_burger {
+        display: block;
+    }
     .menu {
         max-height: 0;
         background: blue;
@@ -457,13 +496,6 @@ footer .container-fluid {
         text-align: center;
         background: yellow;
     }
-    .icon_burger {
-        display: block;
-        position: relative;
-        top: 45px;
-        left: 100%;
-        background: transparent;
-    }
     nav a {
         display: none;
     }
@@ -476,10 +508,12 @@ footer .container-fluid {
     #name {
         font-size: 50px;
         top: 5%;
+        margin-left: 80px;
     }
     #position {
         font-size: 30px;
         top: 5%;
+        margin-left: 80px;
     }
     /* end header */
     .section_me {
@@ -562,13 +596,20 @@ footer .container-fluid {
     #toTop {
         position: fixed;
         bottom: 100px;
-        right: 100px;
+        right: 50px;
     }
 }
 
 @media screen and (max-width:758px) {
     .header {
         height: 650px;
+    }
+    .menu_button {
+        display: block;
+        left: 550px;
+    }
+    .icon_burger {
+        display: block;
     }
     .photo {
         height: 550px;
@@ -578,10 +619,12 @@ footer .container-fluid {
     #name {
         font-size: 50px;
         top: 5%;
+        margin-left: 55px;
     }
     #position {
         font-size: 30px;
         top: 5%;
+        margin-left: 55px;
     }
     .for_me,
     .skills,
@@ -594,7 +637,7 @@ footer .container-fluid {
     }
     .content {
         margin-top: 50px;
-        margin-left: 50px
+        margin-left: 0px
     }
     .text {
         font-size: 20px;
@@ -642,6 +685,7 @@ footer .container-fluid {
     }
     .universati {
         margin-left: 60px;
+        padding-left: 0;
     }
     /* portfolio */
     .section_portfolio {
@@ -671,13 +715,213 @@ footer .container-fluid {
     .img_portfolio_4,
     .img_portfolio_5,
     .img_portfolio_6 {
-        width: 170px;
         height: 200px;
+        width: 170px;
         margin-bottom: 20px;
     }
     /* end portfolio */
     #toTop {
         bottom: 65px;
-        right: 100px;
+        right: 50px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .header {
+        height: 400px;
+    }
+    .menu_button {
+        display: block;
+        left: 460px;
+    }
+    .icon_burger {
+        display: block;
+    }
+    .photo {
+        height: 0px;
+        width: 0px;
+        top: 0px;
+    }
+    #name {
+        font-size: 50px;
+        top: 5%;
+        margin-left: 55px;
+    }
+    #position {
+        font-size: 30px;
+        top: 5%;
+        margin-left: 55px;
+    }
+    .for_me,
+    .skills,
+    .education,
+    .portfolio {
+        font-size: 35px;
+        padding-top: 70px;
+    }
+    .section_me {
+        height: 650px;
+    }
+    .content {
+        margin-top: 50px;
+        margin-left: 0px;
+    }
+    /* skills */
+    .section_skills {
+        height: 580px;
+        padding-left: 0px;
+    }
+    .skills {
+        padding-bottom: 70px;
+        padding-top: 70px;
+    }
+    .first_skills {
+        padding-left: 75px;
+    }
+    /* education */
+    .section_education {
+        padding-left: 0;
+        height: 800px;
+    }
+    .universati {
+        margin-left: 60px;
+        padding-left: 0;
+    }
+    /* portfolio */
+    .section_portfolio {
+        /* height: 0px; */
+        padding-left: 0px;
+    }
+    .portfolio {
+        padding-bottom: 50px;
+        padding-top: 70px;
+    }
+    .img_portfolio,
+    .img_portfolio_2,
+    .img_portfolio_3,
+    .img_portfolio_4,
+    .img_portfolio_5,
+    .img_portfolio_6 {
+        height: 200px;
+        margin: 20px auto
+    }
+    /* end portfolio */
+    #toTop {
+        bottom: 65px;
+        right: 30px;
+    }
+    /* footer */
+    /* .container-fluid {
+        display: none;
+    } */
+}
+
+@media screen and (max-width:400px) {
+    .header {
+        height: 400px;
+    }
+    .menu_button {
+        display: block;
+        left: 260px;
+    }
+    .icon_burger {
+        display: block;
+    }
+    .photo {
+        height: 0px;
+        width: 0px;
+        top: 0px;
+    }
+    #name {
+        font-size: 50px;
+        top: 5%;
+        margin-left: 55px;
+    }
+    #position {
+        font-size: 30px;
+        top: 5%;
+        margin-left: 55px;
+    }
+    .for_me,
+    .skills,
+    .education,
+    .portfolio {
+        font-size: 35px;
+        padding-top: 70px;
+    }
+    .section_me {
+        height: 880px;
+    }
+    .text {
+        font-weight: 700;
+    }
+    .button {
+        margin: 40px auto;
+    }
+    .content {
+        margin-top: 50px;
+        margin-left: 0px;
+    }
+    /* skills */
+    .section_skills {
+        height: 750px;
+        padding-left: 0px;
+    }
+    .skills {
+        padding-bottom: 70px;
+        padding-top: 70px;
+    }
+    .first_skills {
+        padding-left: 70px;
+        padding-bottom: 30px;
+    }
+    .second_skills {
+        padding-left: 70px;
+    }
+    /* education */
+    .section_education {
+        padding-left: 0;
+        height: 1050px;
+    }
+    .text_skills {
+        font-weight: 700;
+    }
+    .universati {
+        margin-left: 60px;
+        padding-left: 0;
+        width: 250px;
+    }
+    .name_colige,
+    span,
+    .time,
+    .specialty {
+        width: 250px;
+    }
+    /* portfolio */
+    .section_portfolio {
+        /* height: 0px; */
+        padding-left: 0px;
+    }
+    .portfolio {
+        padding-bottom: 50px;
+        padding-top: 70px;
+    }
+    .img_portfolio,
+    .img_portfolio_2,
+    .img_portfolio_3,
+    .img_portfolio_4,
+    .img_portfolio_5,
+    .img_portfolio_6 {
+        width: 300px;
+        height: 380px;
+    }
+    /* end portfolio */
+    #toTop {
+        bottom: 65px;
+        right: 30px;
+    }
+    /* footer */
+    .container-fluid {
+        display: none;
     }
 }

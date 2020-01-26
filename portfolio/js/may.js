@@ -17,53 +17,54 @@ $(document).ready(function() {
 
 // фильтр
 $(document).ready(function() {
-    $(' .portfolio_indicator[filter="bootstrap"]').click(function() {
-        if ($(this).attr('val') == 'off') {
-            $('.portfolio_indicator[filter]').attr('val', 'off');
-            $(this).attr('val', 'on');
+        $(' .portfolio_indicator[filter="bootstrap"]').click(function() {
+            if ($(this).attr('val') == 'off') {
+                $('.portfolio_indicator[filter]').attr('val', 'off');
+                $(this).attr('val', 'on');
 
-            $(' .portfolio_indicator[filter]').removeClass('focused');
-            $(this).addClass('focused');
+                $(' .portfolio_indicator[filter]').removeClass('focused');
+                $(this).addClass('focused');
 
-            $(' .filter > div').hide(300);
-            $(' .filter > div[filter="bootstrap"]').show(300);
-        }
+                $(' .filter > div').hide(300);
+                $(' .filter > div[filter="bootstrap"]').show(300);
+            }
+        })
+        $('.portfolio_indicator[filter="sate"]').click(function() {
+            if ($(this).attr('val') == 'off') {
+                $('.portfolio_indicator[filter]').attr('val', 'off');
+                $(this).attr('val', 'on');
+
+                $('.portfolio_indicator[filter]').removeClass('focused');
+                $(this).addClass('focused');
+
+                $(' .filter > div').hide(300);
+                $(' .filter > div[filter="sate"]').show(300);
+            }
+        });
+
+        $('.portfolio_indicator[filter="wd"]').click(function() {
+            if ($(this).attr('val') == 'off') {
+                $('.portfolio_indicator[filter]').attr('val', 'off');
+                $(this).attr('val', 'on');
+
+                $('.portfolio_indicator[filter]').removeClass('focused');
+                $(this).addClass('focused');
+
+                $(' .filter > div').hide(300);
+                $(' .filter > div[filter="wd"]').show(300);
+            }
+        });
+        $('.portfolio_indicator[filter="all"]').click(function() {
+            if ($(this).attr('val') == 'off') {
+                $('.portfolio_indicator[filter]').attr('val', 'off');
+                $(this).attr('val', 'on');
+
+                $(' .portfolio_indicator[filter]').removeClass('focused');
+                $(this).addClass('focused');
+
+                $(' .filter > div').show(300);
+            }
+        })
+
     })
-    $('.portfolio_indicator[filter="sate"]').click(function() {
-        if ($(this).attr('val') == 'off') {
-            $('.portfolio_indicator[filter]').attr('val', 'off');
-            $(this).attr('val', 'on');
-
-            $('.portfolio_indicator[filter]').removeClass('focused');
-            $(this).addClass('focused');
-
-            $(' .filter > div').hide(300);
-            $(' .filter > div[filter="sate"]').show(300);
-        }
-    });
-
-    $('.portfolio_indicator[filter="wd"]').click(function() {
-        if ($(this).attr('val') == 'off') {
-            $('.portfolio_indicator[filter]').attr('val', 'off');
-            $(this).attr('val', 'on');
-
-            $('.portfolio_indicator[filter]').removeClass('focused');
-            $(this).addClass('focused');
-
-            $(' .filter > div').hide(300);
-            $(' .filter > div[filter="wd"]').show(300);
-        }
-    });
-    $('.portfolio_indicator[filter="all"]').click(function() {
-        if ($(this).attr('val') == 'off') {
-            $('.portfolio_indicator[filter]').attr('val', 'off');
-            $(this).attr('val', 'on');
-
-            $(' .portfolio_indicator[filter]').removeClass('focused');
-            $(this).addClass('focused');
-
-            $(' .filter > div').show(300);
-        }
-    })
-
-})
+    // выпадающее меню
