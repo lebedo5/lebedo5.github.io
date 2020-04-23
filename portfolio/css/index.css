@@ -341,31 +341,16 @@ span {
     color: rgb(66, 65, 65);
 }
 
-.portfolio_indicator:hover {
-    background: #5fdcb9;
-    border-style: none;
-}
-
-div[filter]:hover .img_portfolio,
-div[filter]:hover .img_portfolio_2,
-div[filter]:hover .img_portfolio_3,
-div[filter]:hover .img_portfolio_4,
-div[filter]:hover .img_portfolio_5,
-div[filter]:hover .img_portfolio_6 {
-    background: #effaf7;
-}
-
-div[filter]:hover .text_portfolio {
-    display: block;
-    position: relative;
-    top: 50%;
-    text-align: center;
-    max-width: 300px;
-    width: 100%;
-}
-
-figure.effect-milo {
+figure.effect-milo:hover {
     background: #2e5d5a;
+}
+
+h2.headline_portfolio {
+    display: none;
+}
+
+figure.effect-milo:hover h2.headline_portfolio {
+    display: block;
 }
 
 figure.effect-milo h2 {
@@ -444,16 +429,11 @@ figure.effect-milo:hover .content_date {
     max-width: 480px;
     max-height: 360px;
     width: 48%;
-    background: #3085a3;
+    background: white;
     text-align: center;
     cursor: pointer;
-}
-.grid figure img {
-    position: relative;
-    display: block;
-    min-height: 100%;
-    max-width: 100%;
-    opacity: 0.8;
+    height: 360px;
+    margin-bottom: 20px;
 }
 .grid figure figcaption {
     padding: 2em;
