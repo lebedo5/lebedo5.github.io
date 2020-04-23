@@ -480,6 +480,7 @@ figure.effect-milo:hover .content_date {
 .grid figure p {
     letter-spacing: 1px;
     font-size: 68.5%;
+    width: 150px;
 }
 
 /* end portfolio */
