@@ -655,7 +655,7 @@ footer .container-fluid {
     
     .section_portfolio {
         height: 1000px;
-        padding-left: 0px;
+        padding-left: 0px!important;
     }
     
     .portfolio {
@@ -675,13 +675,8 @@ footer .container-fluid {
         padding-top: 30px;
     }
     
-    .img_portfolio,
-    .img_portfolio_2,
-    .img_portfolio_3,
-    .img_portfolio_4,
-    .img_portfolio_5,
-    .img_portfolio_6 {
-        width: 220px;
+    .grid figure {
+        min-width: 220px;
         height: 290px;
         margin-bottom: 20px;
     }
@@ -827,14 +822,9 @@ footer .container-fluid {
         height: 360px;
     }
     
-    .img_portfolio,
-    .img_portfolio_2,
-    .img_portfolio_3,
-    .img_portfolio_4,
-    .img_portfolio_5,
-    .img_portfolio_6 {
-        height: 200px;
-        width: 170px;
+    .grid figure {
+        height: 290px;
+        min-width: 500px;
         margin-bottom: 20px;
     }
     /* end portfolio */
@@ -930,13 +920,9 @@ footer .container-fluid {
         padding-top: 70px;
     }
     
-    .img_portfolio,
-    .img_portfolio_2,
-    .img_portfolio_3,
-    .img_portfolio_4,
-    .img_portfolio_5,
-    .img_portfolio_6 {
+    .grid figure {
         height: 200px;
+        min-width: 300px;
         margin: 20px auto
     }
     /* end portfolio */
@@ -1061,12 +1047,7 @@ footer .container-fluid {
         padding-top: 70px;
     }
     
-    .img_portfolio,
-    .img_portfolio_2,
-    .img_portfolio_3,
-    .img_portfolio_4,
-    .img_portfolio_5,
-    .img_portfolio_6 {
+    .grid figure {
         width: 300px;
         height: 380px;
     }
