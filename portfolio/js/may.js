@@ -68,3 +68,29 @@ $(document).ready(function() {
 
     })
     // выпадающее меню
+$(document).ready(function() {
+    $('.menu_button').click(function() {
+        $('nav').slideToggle(500);
+        $('ul.menu li').css({
+            'display': 'flex',
+            'flex-direction': 'column',
+            'align-items': 'center',
+            'background': 'blue',
+        })
+        if ($('.menu_button').html() == '<i class="fa fa-bars fa-2x icon_burger">') {
+            $(this).html('<i class="fas fa-times"></i>')
+        } else {
+            $(this).html('<i class="fa fa-bars fa-2x icon_burger">')
+        }
+    });
+    // $('ul.menu a[href^="#"]').click(function() {
+    //     var target = $(this).attr('href');
+    //     $('html, body').animation({
+    //         scrollTop: $(target).offset().top
+    //     }, 500);
+    //     $('ul.menu a[href^="#"]').css({ 'color': '#212121' });
+    //     $(this).css({ 'color': '#00897b' });
+    //     return false;
+    // });
+
+})

@@ -61,11 +61,12 @@ nav a {
     background: grey;
 }
 
-.icon_burger {
+
+/* .icon_burger {
     display: none;
     width: 30px;
     height: 30px;
-}
+} */
 
 nav a:after {
     float: both;
@@ -454,7 +455,7 @@ footer .container-fluid {
         font-size: 27px;
     }
     .menu {
-        left: 60px;
+        left: 130px;
     }
     /* portfolio */
     .img_portfolio,
@@ -478,9 +479,9 @@ footer .container-fluid {
         display: block;
         left: 700px;
     }
-    .icon_burger {
+    /* .icon_burger {
         display: block;
-    }
+    } */
     .menu {
         max-height: 0;
         background: blue;
@@ -489,12 +490,13 @@ footer .container-fluid {
     .showing {
         max-height: 20em;
     }
-    .menu li {
+    li {
         box-sizing: border-box;
         width: 100%;
         padding: 24px 0;
         text-align: center;
         background: yellow;
+        height: 40px;
     }
     nav a {
         display: none;
