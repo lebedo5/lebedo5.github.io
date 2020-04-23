@@ -325,52 +325,6 @@ span {
     padding-top: 30px;
 }
 
-.img_portfolio,
-.img_portfolio_2,
-.img_portfolio_3,
-.img_portfolio_4,
-.img_portfolio_5,
-.img_portfolio_6 {
-    height: 360px;
-    margin-bottom: 20px;
-}
-
-.img_portfolio {
-    background: url(../img/img_1.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.img_portfolio_2 {
-    background: url(../img/2_1.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.img_portfolio_3 {
-    background: url(../img/шьп_2.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.img_portfolio_5 {
-    background: url(../img/4.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.img_portfolio_4 {
-    background: url(../img/5.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.img_portfolio_6 {
-    background: url(../img/Logo_Bead_Beads_2.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
 .text_portfolio {
     display: none;
 }
@@ -414,6 +368,13 @@ figure.effect-milo {
     background: #2e5d5a;
 }
 
+figure.effect-milo h2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 1em 1.2em;
+}
+
 figure.effect-milo img {
     max-width: none;
     width: -webkit-calc(100% + 60px);
@@ -428,16 +389,9 @@ figure.effect-milo img {
 }
 
 figure.effect-milo:hover img {
-    opacity: 0.5;
+    opacity: 0.1;
     -webkit-transform: translate3d(0, 0, 0) scale(1);
     transform: translate3d(0, 0, 0) scale(1);
-}
-
-figure.effect-milo h2 {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    padding: 1em 1.2em;
 }
 
 figure.effect-milo p {
@@ -458,6 +412,19 @@ figure.effect-milo:hover p {
     transform: translate3d(0, 0, 0);
 }
 
+figure.effect-milo:hover .content_date {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    color: blanchedalmond;
+    font-size: 12px;
+    display: block;
+    margin-top: 20px;
+    text-transform: lowercase;
+}
+
+
+}
 .grid {
     position: relative;
     margin: 0 auto;
@@ -467,9 +434,7 @@ figure.effect-milo:hover p {
     text-align: center;
 }
 
-
 /* Common style */
-
 .grid figure {
     position: relative;
     float: left;
@@ -483,7 +448,6 @@ figure.effect-milo:hover p {
     text-align: center;
     cursor: pointer;
 }
-
 .grid figure img {
     position: relative;
     display: block;
@@ -491,7 +455,6 @@ figure.effect-milo:hover p {
     max-width: 100%;
     opacity: 0.8;
 }
-
 .grid figure figcaption {
     padding: 2em;
     color: #fff;
@@ -500,12 +463,10 @@ figure.effect-milo:hover p {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
-
 .grid figure figcaption::before,
 .grid figure figcaption::after {
     pointer-events: none;
 }
-
 .grid figure figcaption,
 .grid figure figcaption>a {
     position: absolute;
@@ -514,7 +475,6 @@ figure.effect-milo:hover p {
     width: 100%;
     height: 100%;
 }
-
 .grid figure figcaption>a {
     z-index: 1000;
     text-indent: 200%;
@@ -522,31 +482,27 @@ figure.effect-milo:hover p {
     font-size: 0;
     opacity: 0;
 }
-
 .grid figure h2 {
     word-spacing: -0.15em;
     font-weight: 300;
 }
-
 .grid figure h2 span {
     font-weight: 800;
     color: white;
+    text-transform: uppercase;
+    color: blanchedalmond;
 }
-
 .grid figure h2,
 .grid figure p {
     margin: 0;
     color: white;
 }
-
 .grid figure p {
     letter-spacing: 1px;
     font-size: 68.5%;
 }
 
-
 /* end portfolio */
-
 footer .container-fluid {
     background: #effaf7;
     font-family: "Montserrat", regular;
@@ -556,9 +512,7 @@ footer .container-fluid {
     padding-top: 10px;
 }
 
-
 /* end footer */
-
 #toTop {
     position: fixed;
     width: 50px;
@@ -576,22 +530,21 @@ footer .container-fluid {
     z-index: 999;
     color: #000000;
 }
-
 .menu {
     list-style: none;
 }
 
-
 /* ADAPTIV */
-
 @media screen and (max-width:1020px) {
     nav a {
         font-size: 27px;
     }
+    
     .menu {
         left: 130px;
     }
     /* portfolio */
+    
     .img_portfolio,
     .img_portfolio_2,
     .img_portfolio_3,
@@ -603,12 +556,12 @@ footer .container-fluid {
         margin-bottom: 20px;
     }
 }
-
 @media screen and (max-width:950px) {
     .header {
         height: 650px;
     }
     /* не работает */
+    
     .menu_button {
         display: block;
         left: 700px;
@@ -616,14 +569,17 @@ footer .container-fluid {
     /* .icon_burger {
         display: block;
     } */
+    
     .menu {
         max-height: 0;
         background: blue;
         left: 0;
     }
+    
     .showing {
         max-height: 20em;
     }
+    
     li {
         box-sizing: border-box;
         width: 100%;
@@ -632,30 +588,36 @@ footer .container-fluid {
         background: yellow;
         height: 40px;
     }
+    
     nav a {
         display: none;
     }
     /* не работает */
+    
     .photo {
         height: 600px;
         width: 350px;
         top: -20px;
     }
+    
     #name {
         font-size: 50px;
         top: 5%;
         margin-left: 80px;
     }
+    
     #position {
         font-size: 30px;
         top: 5%;
         margin-left: 80px;
     }
     /* end header */
+    
     .section_me {
         background: #effaf7;
         padding-left: 0px;
     }
+    
     .for_me,
     .skills,
     .education,
@@ -666,47 +628,59 @@ footer .container-fluid {
         font-size: 45px;
         padding-top: px;
     }
+    
     .content {
         margin-top: 50px;
         margin-left: 50px
     }
+    
     .icon {
         margin: 10px;
     }
+    
     .button_position {
         left: 65%;
     }
     /* end about me */
+    
     .section_skills {
         padding-left: 0px;
         margin-bottom: 25px;
     }
+    
     .skills {
         padding-bottom: 50px;
     }
+    
     .text_skills {
         padding-bottom: 32px;
     }
+    
     .first_skills {
         padding-left: 75px;
     }
     /* end skills */
+    
     .section_education {
         padding-left: 0px;
         margin-bottom: 25px;
     }
+    
     .universati {
         margin-top: 70px;
         margin-left: 75px;
     }
     /* end education */
+    
     .section_portfolio {
         height: 1000px;
         padding-left: 0px;
     }
+    
     .portfolio {
         padding-bottom: 50px;
     }
+    
     .portfolio_indicator {
         font-size: 22px;
         width: 210px;
@@ -715,9 +689,11 @@ footer .container-fluid {
         margin-right: 10px;
         margin-left: 10px;
     }
+    
     .work_site {
         padding-top: 30px;
     }
+    
     .img_portfolio,
     .img_portfolio_2,
     .img_portfolio_3,
@@ -729,39 +705,45 @@ footer .container-fluid {
         margin-bottom: 20px;
     }
     /* end portfolio */
+    
     #toTop {
         position: fixed;
         bottom: 100px;
         right: 50px;
     }
 }
-
 @media screen and (max-width:758px) {
     .header {
         height: 650px;
     }
+    
     .menu_button {
         display: block;
         left: 550px;
     }
+    
     .icon_burger {
         display: block;
     }
+    
     .photo {
         height: 550px;
         width: 350px;
         top: -30px;
     }
+    
     #name {
         font-size: 50px;
         top: 5%;
         margin-left: 55px;
     }
+    
     #position {
         font-size: 30px;
         top: 5%;
         margin-left: 55px;
     }
+    
     .for_me,
     .skills,
     .education,
@@ -771,80 +753,99 @@ footer .container-fluid {
         font-family: "Kelly Slab", regular;
         font-size: 45px;
     }
+    
     .content {
         margin-top: 50px;
         margin-left: 0px
     }
+    
     .text {
         font-size: 20px;
     }
+    
     .information {
         font-size: 20px;
     }
+    
     .icon {
         margin: 4px;
     }
+    
     .button_position {
         left: 65%;
     }
     /* skills */
+    
     .section_skills {
         height: 620px;
         width: 100%;
         background: white;
         padding-left: 0px;
     }
+    
     .skills {
         padding-bottom: 70px;
     }
+    
     .text_skills {
         font-size: 18px;
     }
+    
     .content_skills {
         font-family: "Montserrat", regular;
         font-size: 18px;
         text-transform: uppercase;
         color: #3c3f3e;
     }
+    
     .first_skills {
         padding-left: 75px;
     }
     /* education */
+    
     .section_education {
         padding-left: 0;
     }
+    
     .name_colige,
     span,
     .time,
     .specialty {
         font-size: 20px;
     }
+    
     .universati {
         margin-left: 60px;
         padding-left: 0;
     }
     /* portfolio */
+    
     .section_portfolio {
         height: 820px;
         padding-left: 0px;
     }
+    
     .portfolio {
         padding-bottom: 10px;
     }
+    
     .portfolio_indicator {
         font-size: 23px;
         width: 190px;
         height: 60px;
         margin-bottom: 20px;
     }
+    
     .indicator {
         display: flex;
         justify-content: center;
     }
+    
     .portfolio_fail {
         width: 320px;
         height: 360px;
     }
+    
     .img_portfolio,
     .img_portfolio_2,
     .img_portfolio_3,
@@ -856,38 +857,44 @@ footer .container-fluid {
         margin-bottom: 20px;
     }
     /* end portfolio */
+    
     #toTop {
         bottom: 65px;
         right: 50px;
     }
 }
-
 @media screen and (max-width:640px) {
     .header {
         height: 400px;
     }
+    
     .menu_button {
         display: block;
         left: 460px;
     }
+    
     .icon_burger {
         display: block;
     }
+    
     .photo {
         height: 0px;
         width: 0px;
         top: 0px;
     }
+    
     #name {
         font-size: 50px;
         top: 5%;
         margin-left: 55px;
     }
+    
     #position {
         font-size: 30px;
         top: 5%;
         margin-left: 55px;
     }
+    
     .for_me,
     .skills,
     .education,
@@ -895,43 +902,53 @@ footer .container-fluid {
         font-size: 35px;
         padding-top: 70px;
     }
+    
     .section_me {
         height: 650px;
     }
+    
     .content {
         margin-top: 50px;
         margin-left: 0px;
     }
     /* skills */
+    
     .section_skills {
         height: 580px;
         padding-left: 0px;
     }
+    
     .skills {
         padding-bottom: 70px;
         padding-top: 70px;
     }
+    
     .first_skills {
         padding-left: 75px;
     }
     /* education */
+    
     .section_education {
         padding-left: 0;
         height: 800px;
     }
+    
     .universati {
         margin-left: 60px;
         padding-left: 0;
     }
     /* portfolio */
+    
     .section_portfolio {
         /* height: 0px; */
         padding-left: 0px;
     }
+    
     .portfolio {
         padding-bottom: 50px;
         padding-top: 70px;
     }
+    
     .img_portfolio,
     .img_portfolio_2,
     .img_portfolio_3,
@@ -942,6 +959,7 @@ footer .container-fluid {
         margin: 20px auto
     }
     /* end portfolio */
+    
     #toTop {
         bottom: 65px;
         right: 30px;
@@ -951,33 +969,38 @@ footer .container-fluid {
         display: none;
     } */
 }
-
 @media screen and (max-width:400px) {
     .header {
         height: 400px;
     }
+    
     .menu_button {
         display: block;
         left: 260px;
     }
+    
     .icon_burger {
         display: block;
     }
+    
     .photo {
         height: 0px;
         width: 0px;
         top: 0px;
     }
+    
     #name {
         font-size: 50px;
         top: 5%;
         margin-left: 55px;
     }
+    
     #position {
         font-size: 30px;
         top: 5%;
         margin-left: 55px;
     }
+    
     .for_me,
     .skills,
     .education,
@@ -985,48 +1008,60 @@ footer .container-fluid {
         font-size: 35px;
         padding-top: 70px;
     }
+    
     .section_me {
         height: 880px;
     }
+    
     .text {
         font-weight: 700;
     }
+    
     .button {
         margin: 40px auto;
     }
+    
     .content {
         margin-top: 50px;
         margin-left: 0px;
     }
     /* skills */
+    
     .section_skills {
         height: 750px;
         padding-left: 0px;
     }
+    
     .skills {
         padding-bottom: 70px;
         padding-top: 70px;
     }
+    
     .first_skills {
         padding-left: 70px;
         padding-bottom: 30px;
     }
+    
     .second_skills {
         padding-left: 70px;
     }
     /* education */
+    
     .section_education {
         padding-left: 0;
         height: 1050px;
     }
+    
     .text_skills {
         font-weight: 700;
     }
+    
     .universati {
         margin-left: 60px;
         padding-left: 0;
         width: 250px;
     }
+    
     .name_colige,
     span,
     .time,
@@ -1034,14 +1069,17 @@ footer .container-fluid {
         width: 250px;
     }
     /* portfolio */
+    
     .section_portfolio {
         /* height: 0px; */
         padding-left: 0px;
     }
+    
     .portfolio {
         padding-bottom: 50px;
         padding-top: 70px;
     }
+    
     .img_portfolio,
     .img_portfolio_2,
     .img_portfolio_3,
@@ -1052,11 +1090,13 @@ footer .container-fluid {
         height: 380px;
     }
     /* end portfolio */
+    
     #toTop {
         bottom: 65px;
         right: 30px;
     }
     /* footer */
+    
     .container-fluid {
         display: none;
     }
