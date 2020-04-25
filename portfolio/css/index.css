@@ -978,7 +978,7 @@ footer .container-fluid {
     }
     
     .section_me {
-        height: 880px;
+        height: 880px!important;
     }
     
     .text {
@@ -1025,7 +1025,7 @@ footer .container-fluid {
     }
     
     .universati {
-        margin-left: 60px;
+        margin-left: 0px!important;
         padding-left: 0;
         width: 250px;
     }
