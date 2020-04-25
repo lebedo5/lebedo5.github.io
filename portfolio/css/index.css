@@ -678,7 +678,7 @@ footer .container-fluid {
     
     .grid figure {
         min-width: 220px;
-        height: 290px;
+        height: 400px;
         margin-bottom: 20px;
     }
     /* end portfolio */
@@ -824,7 +824,7 @@ footer .container-fluid {
     }
     
     .grid figure {
-        height: 290px;
+        height: 400px;
         min-width: 500px;
         margin-bottom: 20px;
     }
@@ -922,7 +922,7 @@ footer .container-fluid {
     }
     
     .grid figure {
-        height: 200px;
+        height: 300px;
         min-width: 300px;
         margin: 20px auto
     }
