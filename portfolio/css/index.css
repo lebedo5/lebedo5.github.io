@@ -886,7 +886,7 @@ footer .container-fluid {
     /* skills */
     
     .section_skills {
-        height: 580px;
+        height: 580px!important;
         padding-left: 0px;
     }
     
@@ -902,7 +902,7 @@ footer .container-fluid {
     
     .section_education {
         padding-left: 0;
-        height: 800px;
+        height: 800px!important;
     }
     
     .universati {
@@ -996,7 +996,7 @@ footer .container-fluid {
     /* skills */
     
     .section_skills {
-        height: 750px;
+        height: 750px!important;
         padding-left: 0px;
     }
     
