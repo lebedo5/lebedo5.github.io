@@ -886,7 +886,7 @@ footer .container-fluid {
     /* skills */
     
     .section_skills {
-        height: 580px!important;
+        height: 750px!important;
         padding-left: 0px;
     }
     
@@ -896,6 +896,10 @@ footer .container-fluid {
     }
     
     .first_skills {
+        padding-left: 75px;
+    }
+    
+    .second_skills {
         padding-left: 75px;
     }
     /* education */
@@ -1012,6 +1016,10 @@ footer .container-fluid {
     
     .second_skills {
         padding-left: 70px;
+    }
+    
+    .second_skills {
+        padding-left: 75px;
     }
     /* education */
     
