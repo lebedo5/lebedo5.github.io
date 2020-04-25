@@ -1025,7 +1025,7 @@ footer .container-fluid {
     
     .section_education {
         padding-left: 0;
-        height: 1050px;
+        height: 1050px!important;
     }
     
     .text_skills {
@@ -1034,7 +1034,7 @@ footer .container-fluid {
     
     .universati {
         margin-left: 0px!important;
-        padding-left: 0;
+        padding-left: 75px!important;
         width: 250px;
     }
     
